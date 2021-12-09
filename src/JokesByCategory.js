@@ -24,6 +24,7 @@ const JokesByCategory = () => {
       {jokeCategory.map((categorie) => {
         return (
           <button
+            className="Button"
             key={categorie}
             id={categorie}
             onClick={(e) => setValueOfButton(e.target.id)}
