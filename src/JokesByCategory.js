@@ -20,19 +20,21 @@ const JokesByCategory = () => {
   }, [valueOfButton]);
 
   return (
-    <div>
-      {jokeCategory.map((categorie) => {
-        return (
-          <button
-            className="Button"
-            key={categorie}
-            id={categorie}
-            onClick={(e) => setValueOfButton(e.target.id)}
-          >
-            {categorie}
-          </button>
-        );
-      })}
+    <div className="div-style">
+      <div>
+        {jokeCategory.map((categorie) => {
+          return (
+            <button
+              className="Button"
+              key={categorie}
+              id={categorie}
+              onClick={(e) => setValueOfButton(e.target.id)}
+            >
+              {categorie}
+            </button>
+          );
+        })}
+      </div>
       {jokesshow.map((joke) => {
         return (
           <p className="p_style" key={joke}>

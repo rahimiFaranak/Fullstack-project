@@ -11,9 +11,11 @@ const JokeSearch = () => {
   };
 
   return (
-    <div>
+    <div className="div-style">
       <form onSubmit={findJoke}>
-        <label htmlFor="text">search</label>
+        <label className="" htmlFor="text">
+          search
+        </label>
         <input
           className="form__input"
           type="text"

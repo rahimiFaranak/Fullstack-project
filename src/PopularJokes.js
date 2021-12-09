@@ -5,9 +5,11 @@ const PopularJokes = () => {
     .then((response) => response.json())
     .then((data) => setPopular(data));
   return (
-    <div>
+    <div className="div-style">
       {Popular.map((joke) => (
-        <p key={joke}>{joke}</p>
+        <p className="p-style" key={joke}>
+          {joke}
+        </p>
       ))}
     </div>
   );
