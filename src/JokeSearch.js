@@ -14,7 +14,11 @@ const JokeSearch = () => {
     <div>
       <form onSubmit={findJoke}>
         <label htmlFor="text">search</label>
-        <input type="text" onChange={(e) => setSearchValue(e.target.value)} />
+        <input
+          className="form__input"
+          type="text"
+          onChange={(e) => setSearchValue(e.target.value)}
+        />
         <button className="Button" type="submit">
           submit
         </button>
