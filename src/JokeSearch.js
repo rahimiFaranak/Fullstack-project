@@ -24,7 +24,11 @@ const JokeSearch = () => {
         </button>
       </form>
       {searchJokes.map((joke) => {
-        return <p key={joke}>{joke}</p>;
+        return (
+          <p className="p-style" key={joke}>
+            {joke}
+          </p>
+        );
       })}
     </div>
   );
