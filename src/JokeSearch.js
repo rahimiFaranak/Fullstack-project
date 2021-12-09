@@ -15,7 +15,9 @@ const JokeSearch = () => {
       <form onSubmit={findJoke}>
         <label htmlFor="text">search</label>
         <input type="text" onChange={(e) => setSearchValue(e.target.value)} />
-        <button type="submit">submit</button>
+        <button className="Button" type="submit">
+          submit
+        </button>
       </form>
       {searchJokes.map((joke) => {
         return <p key={joke}>{joke}</p>;
