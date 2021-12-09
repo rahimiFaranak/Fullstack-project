@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import "./jokesBycategory.css";
 const JokesByCategory = () => {
   const [jokeCategory, setJokeCategory] = useState([]);
   const [jokesshow, setJokesshow] = useState([]);
