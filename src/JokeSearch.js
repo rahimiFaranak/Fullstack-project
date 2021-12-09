@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./jokesearch.css";
 const JokeSearch = () => {
   const [searchValue, setSearchValue] = useState(" ");
   const [searchJokes, setSearchJokes] = useState([]);
