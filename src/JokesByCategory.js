@@ -34,7 +34,11 @@ const JokesByCategory = () => {
         );
       })}
       {jokesshow.map((joke) => {
-        return <p key={joke}>{joke}</p>;
+        return (
+          <p className="p_style" key={joke}>
+            {joke}
+          </p>
+        );
       })}
     </div>
   );
