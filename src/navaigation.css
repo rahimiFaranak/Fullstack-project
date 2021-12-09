@@ -1,0 +1,20 @@
+.NavBar {
+  background-color: whitesmoke;
+  border-bottom: 1px solid #cccc;
+  padding: 20px;
+  width: 100%;
+}
+.App-link {
+  padding: 1rem;
+  text-decoration: none;
+  color: white;
+  margin: 27px auto 0;
+  position: relative;
+  width: 590px;
+  height: 50px;
+  background-color: #34495e;
+  border-radius: 8px;
+}
+.App-link:hover {
+  color: hotpink;
+}

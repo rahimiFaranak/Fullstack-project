@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router";
+import "./App.css";
+import Navaigation from "./Navaigation";
+import RandomJoke from "./RandomJoke";
+import JokesByCategory from "./JokesByCategory";
+import JokeSearch from "./JokeSearch";
+import PopularJokes from "./PopularJokes";
+import NotFound from "./NotFound";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navaigation />
+      <Routes>
+        <Route path="/" element={<RandomJoke />} />
+        <Route path="by-category" element={<JokesByCategory />} />
+        <Route path="search" element={<JokeSearch />} />
+        <Route path="popular" element={<PopularJokes />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
     </div>
   );
-}
+};
 
 export default App;
