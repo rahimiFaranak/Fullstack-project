@@ -4,7 +4,7 @@ import Logo from "./Logo";
 const Navaigation = () => {
   return (
     <nav className="NavBar">
-      <h1 className="nav-h1">Hi</h1>
+      <h1 className="nav-h1">Jokes App</h1>
       <Logo />
       <Link className="App-link" to="/">
         RandomJoke
